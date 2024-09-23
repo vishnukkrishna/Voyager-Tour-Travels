@@ -20,6 +20,8 @@ const scrollRevealOption = {
   duration: 1000,
 };
 
+// ............................................
+
 ScrollReveal().reveal(".header__image img", {
   ...scrollRevealOption,
   orgin: "right",
@@ -40,10 +42,14 @@ ScrollReveal().reveal(".header__btns", {
   delay: 1500,
 });
 
+// ............................................
+
 ScrollReveal().reveal(".destination__card", {
   ...scrollRevealOption,
   interval: 500,
 });
+
+// .............................................
 
 ScrollReveal().reveal(".showcase__image img", {
   ...scrollRevealOption,
@@ -64,3 +70,12 @@ ScrollReveal().reveal(".showcase__btn", {
   ...scrollRevealOption,
   delay: 1500,
 });
+
+// ............................................
+
+ScrollReveal().reveal(".banner__card", {
+  ...scrollRevealOption,
+  interval: 500,
+});
+
+// ............................................
