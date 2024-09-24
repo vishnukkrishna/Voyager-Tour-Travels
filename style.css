@@ -408,6 +408,48 @@ header::before {
 
 /* ............................................................ */
 
+.discover__grid {
+  margin-top: 4rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.discover__card {
+  padding: 2rem 1rem;
+  text-align: center;
+  transition: 0.3s;
+  border-radius: 1rem;
+}
+
+.discover__card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.discover__card span {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  background-color: rgba(40, 135, 255, 0.1);
+  border-radius: 100%;
+}
+
+.discover__card h4 {
+  max-width: 150px;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.discover__card p {
+  color: var(--text-light);
+}
+
+/* ............................................................ */
+
 @media (width > 540px) {
   .destination__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -429,6 +471,12 @@ header::before {
   /* ..................................... */
 
   .banner__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ..................................... */
+
+  .discover__grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -560,4 +608,8 @@ header::before {
   }
 
   /* ..................................... */
+
+  .discover__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
