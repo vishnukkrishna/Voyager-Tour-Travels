@@ -79,3 +79,12 @@ ScrollReveal().reveal(".banner__card", {
 });
 
 // ............................................
+
+ScrollReveal().reveal(".discover__card", {
+  ...scrollRevealOption,
+  interval: 500,
+});
+
+// ............................................
+
+
